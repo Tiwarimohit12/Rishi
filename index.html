@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Wood Wings</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #eee;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .nav-bar img {
+            height: 90px;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-bar li i {
+            padding: 5px 10px;
+        }
+
+        .main-section {
+            background-image: url('https://img.freepik.com/free-photo/gray-sofa-brown-living-room-with-copy-space_43614-954.jpg');
+            background-size: cover;
+            padding: 100px 50px;
+            color: white;
+            object-fit: cover;
+            image-resolution: inherit;
+            text-align: center;
+        }
+
+        .main-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .main-section p {
+            margin-bottom: 30px;
+        }
+
+        .main-section button {
+            padding: 10px 30px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .logo-brand-section {
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            padding: 50px 0;
+            background-color: #f5f5f5;
+        }
+
+        .logo-brand-section img {
+            height: 80px;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            gap: 60px;
+        }
+
+        .image-placeholder {
+            background-color: #ddd;
+            width: 500px;
+            height: 700px;
+            margin-right: 50px;
+        }
+
+        .content {
+            max-width: 600px;
+        }
+
+        .content h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #b2acac2f;
+        }
+
+        .text-section {
+            width: 40%;
+        }
+
+        .image-section {
+            background-color: #ddd;
+            width: 300px;
+            height: 400px;
+            margin-right: 50px;
+        }
+
+        .btn {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .signup-section {
+              background-size: cover;
+            text-align: center;
+            padding: 0px 0;
+        }
+
+        .content1 {
+            width: 100%;
+            background: url('https://media.istockphoto.com/id/1077534248/photo/background-with-wood-texture.jpg?s=612x612&w=0&k=20&c=iNvO7e6skcHNkCqgZsmQN81OJOO1hdPbGQ9D_YFiUxw=')center;  
+            display: inline-block;
+            padding: 10px;
+
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .content1 p {
+            margin-top: 0;
+            color: #ffffff;
+        }
+
+        .shop-now {
+            background-color: #a67c52;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .signup-news{
+            padding: 20px;
+        }
+        .signup-news h2 {
+            margin: 40px 0 15px;
+            color: #333;
+        }
+
+        .signup-news p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .signup-form input[type="email"] {
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .signup-form button {
+            background-color: #a67c52;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .signup-form button:hover {
+            background-color: #8d6748;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3E2723;
+            color: white;
+            padding: 10px 20px;
+        }
+        
+        .logo h1, .logo p {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .logo p {
+            font-size: small;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-links a, .dropbtn {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #5D4037;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #3A1C1C;
+            font-size: 14px;
+            color: white;
+            border-top: 1px solid #5C2D2D;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav-bar">
+            <img src="data:image/png;base64,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"
+                alt="Wood Wings Logo">
+            <ul>
+                <li>Home</li>
+                <li>Product</li>
+                <li>Features</li>
+                <li>Short Codes</li>
+                <li>Post Types</li>
+                <i class="ri-search-line"></i>
+                <i class="ri-account-circle-fill"></i>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <h1>The new Collection</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+        <button>SHOP NOW</button>
+    </section>
+
+    <section class="logo-brand-section">
+        <img src="https://www.shutterstock.com/image-vector/wood-icon-sawmill-logo-black-260nw-1495837931.jpg"
+            alt="Brand 1">
+        <img src="https://www.shutterstock.com/image-vector/wood-logo-design-illustration-vector-260nw-1840951642.jpg"
+            alt="Brand 2">
+        <img src="https://www.shutterstock.com/image-vector/vector-logo-template-design-parquet-260nw-715575889.jpg"
+            alt="Brand 3">
+        <img src="https://www.shutterstock.com/image-vector/wood-parquet-flooring-vinyl-hardwood-260nw-1417231370.jpg"
+            alt="Brand 4">
+    </section>
+
+    <div class="about-section">
+        <div class="image-placeholder"></div>
+        <div class="content">
+            <h1>About us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odio facilis esse culpa.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Molestias odio facilis esse culpa.Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Molestias odio facilis esse culpa.Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Molestias odio facilis esse culpa.Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Molestias odio facilis esse culpa.Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Molestias odio facilis esse culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias odio facilis esse culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+                odio facilis esse culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odio facilis
+                esse culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odio facilis esse
+                culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odio facilis esse culpa.Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Molestias odio facilis esse culpa.Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Molestias odio facilis esse culpa.Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Molestias odio facilis esse culpa. . .</p>
+            <button>SHOP NOW</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-section">
+            <h1>We are a full Service Locksmith Shop</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam consequatur voluptates nemo vitae
+                minima tenetur, vitae neque modi reprehenderit illo unde et inventore. Unde ipsam deserunt eum qui quis
+                quos.</p>
+            <a href="#" class="btn">OUR SERVICE</a>
+        </div>
+        <div class="image-section">
+            <img src="" alt="Locksmith Shop Interior">
+        </div>
+    </div>
+
+    <div class="signup-section">
+        <div class="content1">
+            <h1>Asphalt & Wood</h1>
+            <p>Hot trends for your kitchen</p>
+            <button class="shop-now">SHOP NOW</button>
+        </div>
+        <div class="signup-news">
+            <h2>Sign up for News!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <form class="signup-form">
+                <input type="email" placeholder="Email" required>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>WOOD WINGS</h1>
+                <p>FURNITURE</p>
+            </div>
+            <div class="nav-links">
+                <div class="dropdown">
+                    <button class="dropbtn">Browse By</button>
+                    <div class="dropdown-content">
+                        <a href="#">Brand</a>
+                        <a href="#">Product</a>
+                        <a href="#">Category</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Resources</button>
+                    <div class="dropdown-content">
+                        <a href="#">Design</a>
+                        <a href="#">Projects</a>
+                        <a href="#">Sales</a>
+                    </div>
+                </div>
+                <a href="#">Showrooms</a>
+                <a href="#">News</a>
+                <a href="mailto:woodwings@gmail.com">woodwings@gmail.com</a>
+                <a href="#">India (IN)</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <footer>
+        <p>Privacy Policy | This is a sample website - craftmasters © 2021, All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
